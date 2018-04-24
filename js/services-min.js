@@ -1,0 +1,1 @@
+angular.module("BusReport.services",[]).factory("DataService",function(e,t,r){"use strict";return{BusServicesData:null,load:function(){if(this.BusServicesData)return e.when(this.BusServicesData);var n=e.defer();return t.get(r).then(function(e){n.resolve(e.data)},function(e){console.log(e),n.reject(e)}),n.promise}}});

@@ -1,0 +1,1 @@
+angular.module("BusReport",["BusReport.controllers","BusReport.services","BusReport.directives"]).constant("BusServicesDataJSON","./bus-services-data.json");

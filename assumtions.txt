@@ -1,0 +1,6 @@
+- Using Angular js
+- Running index.html from a server using http protocol, not file://
+- deviation from time table: 0-299 is on time, bigger than or equal 300 is late, less than 0 is early
+
+- routeVariant value is either UNKNOWN or has format xxx<space>#<space>#
+- Status or deviationFromTimetable is either null or a number

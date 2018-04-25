@@ -5,7 +5,6 @@ angular
       .load()
       .then(function(BusServicesData) {
         $scope.BusServicesData = BusServicesData.data
-        console.log($scope.BusServicesData)
       });
 
     $scope.toggleBusRoutes = function(e) {
@@ -19,5 +18,5 @@ angular
         p.removeClass('show').addClass('hide')
       }
 
-    }
+    };
   });

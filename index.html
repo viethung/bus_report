@@ -31,22 +31,22 @@
           </div>
           <div class="card-text">
             <div class="row">
-              <div class="col-sm">Bus ID</div>
-              <div class="col-sm">Route Variant</div>
-              <div class="col-sm">Status</div>
+              <div class="col-sm" role="heading" aria-label="Bus ID">Bus ID</div>
+              <div class="col-sm" role="heading" aria-label="Route Variant">Route Variant</div>
+              <div class="col-sm" role="heading" aria-label="Status">Status</div>
             </div>
             <div class="row" ng-repeat="bus in entity.busData">
-              <div class="col-sm">{{bus.busId}}</div>
+              <div class="col-sm" role="busId" aria-label="Bus id {{bus.busId}}">{{bus.busId}}</div>
               <route-variant></route-variant>
               <bus-status></bus-status>
             </div>
 
           </div>
           <div class="row">
-            <textarea placeholder="Enter notes here"></textarea>
+            <textarea placeholder="Enter notes here" role="textarea" aria-label="Enter notes here"></textarea>
           </div>
           <div class="row">
-            <button type="button" class="btn btn-info">Save Notes</button>
+            <button type="button" class="btn btn-info" role="button" aria-label="Save notes">Save Notes</button>
           </div>
         </div>
     </div>

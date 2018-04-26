@@ -8,14 +8,17 @@ angular
       });
 
     $scope.toggleBusRoutes = function(e) {
-      var p = angular.element(e.target).parent();
+      // Only type enter key (keycode = 13) to toggle show/hide
+      if(e.keyCode === 13) {
+        var p = angular.element(e.target).parent();
 
-      if(p.hasClass('hide')) {
-        // display content
-        p.removeClass('hide').addClass('show')
-      } else if(p.hasClass('show')) {
-        // hide content
-        p.removeClass('show').addClass('hide')
+        if(p.hasClass('hide')) {
+          // display content
+          p.removeClass('hide').addClass('show')
+        } else if(p.hasClass('show')) {
+          // hide content
+          p.removeClass('show').addClass('hide')
+        }
       }
 
     };

@@ -26,17 +26,17 @@
       <div class="card">
         <div class="card-body">
           <div class="card-title hide">
-            <div>{{entity.organisation}} - {{entity.date}}</div>
-            <i class="arrow" ng-click="toggleBusRoutes($event)"></i>
+            <div tabindex="0">{{entity.organisation}} - {{entity.date}}</div>
+            <i class="arrow" ng-click="toggleBusRoutes($event)" ng-keydown="toggleBusRoutes($event)" role="button" tabindex="0" aria-label="Show bus routes information toggle button"></i>
           </div>
           <div class="card-text">
             <div class="row">
-              <div class="col-sm" role="heading" aria-label="Bus ID">Bus ID</div>
-              <div class="col-sm" role="heading" aria-label="Route Variant">Route Variant</div>
-              <div class="col-sm" role="heading" aria-label="Status">Status</div>
+              <div class="col-sm" role="heading" aria-label="Bus ID" tabindex="0">Bus ID</div>
+              <div class="col-sm" role="heading" aria-label="Route Variant" tabindex="0">Route Variant</div>
+              <div class="col-sm" role="heading" aria-label="Status" tabindex="0">Status</div>
             </div>
             <div class="row" ng-repeat="bus in entity.busData">
-              <div class="col-sm" role="busId" aria-label="Bus id {{bus.busId}}">{{bus.busId}}</div>
+              <div class="col-sm" role="busId" aria-label="Bus id {{bus.busId}}" tabindex="0">{{bus.busId}}</div>
               <route-variant></route-variant>
               <bus-status></bus-status>
             </div>
